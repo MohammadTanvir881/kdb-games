@@ -25,10 +25,10 @@
 </head>
 
 <body class=""> 
-        <main class="bg-[#010313] min-h-screen bg-[url(images/background.png)]  bg-no-repeat bg-center">
+        <main class="bg-[#010313] background-pic min-h-screen   bg-no-repeat bg-cover">
             <section id="home" class=" min-h-screen flex flex-col justify-center items-center">
                 <div class="text-center space-y-8 ">
-                    <h1 class="text-8xl font-poppins font-bold text-white">ALPHABET CLASH</h1>
+                    <h1 class="text-8xl font-poppins font-bold text-white alphabet">ALPHABET CLASH</h1>
                     <p class="text-white text-2xl">Unleash Your Keyboard Kung Fu : click to Play</p>
                     <button onclick="displayElementFunction()" class="btn text-black font-medium text-xl">Play Now</button>
                 </div>
@@ -37,7 +37,7 @@
             <section id="play-ground" class="play-ground hidden">
                 <!--monitor section-->
                 <div class="flex justify-center">
-                    <div class="artboard artboard-horizontal phone-6 border-[18px] border-[#010313CC] bg-[#FFFFFFB3] rounded-xl lg:mt-20 lg:mb-16">
+                    <div class="artboard artboard-horizontal phone-6 border-[18px] border-[#010313CC] bg-[#FFFFFFB3] rounded-xl lg:mt-10 lg:mb-12">
                        <div class="text-center">
                         <p class="text-white bg-[#2F2941] inline-block px-4 py-2 rounded-b-xl">Don't watch keyboard  while playing...</p>
                        </div>
@@ -86,12 +86,12 @@
                   <!--life section-->
                   <div class="flex justify-center">
                      <div class="flex  w-3/5 items-center justify-between lg:mt-10">
-                        <button class="btn bg-purple-700 border-none text-white text-md">
+                        <button class="btn bg-neutral-700 border-none text-white text-md">
                             Life 
                             <img src="images/heart.svg" alt="">
                             <span id="current-life">5</span>
                          </button>
-                         <button class="btn bg-purple-700 border-none text-white text-md">
+                         <button class="btn bg-neutral-700  border-none text-white text-md">
                             Score
                             <img src="images/dollar.svg" alt="">
                             <span id="current-score">0</span>
@@ -101,10 +101,11 @@
             </section>
      
             <section id="total-score" class=" flex flex-col justify-center items-center min-h-screen hidden">
-                 <div class="text-white text-center space-y-8 bg-[#FFFFFF33] p-10 rounded-2xl">
+                 <div class="text-white text-center space-y-5 score-bg  p-10 rounded-2xl">
                      <h1 class="text-2xl">Game Over!</h1>
                      <h1>Highest Score : <span id="highest-score"> 1867 </span></h1>
                      <h1 class="text-7xl font-bold">Score : <span id="game-score">0</span></h1>
+                     <h5 id="rating-score"></h5>
                      <button id="play-again" onclick="play()" class="btn text-black font-bold"> Play Again</button>
                      <p>Practice will make you Pro</p>
                  </div>
